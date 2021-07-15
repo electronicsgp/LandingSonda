@@ -1,0 +1,232 @@
+/* custom properties */
+
+:root {
+    --primary-black: #222222;
+    --primary-cream: #023038;
+    --secondary-black: #332C22;
+    --secondary-cream: #01FFFF;
+    --dark-cream: #A87A16;
+    --white: #FFFFFF;
+    --tea: #00937A;
+    --contrast-footer: #FCFCFC;
+    --size-title: 28px;
+    --size-title-mobile: 18px;
+    --size-subtitle: 30px;
+    --size-subtitle-mobile: 22px;
+    --items-nav-footer: 16px;
+    --caption: 12px;
+    --body: 18px;
+    --body-mobile: 14px;
+    --card-unit: 24px;
+    --card-unit-mobile: 15px;
+    --card-price: 32px;
+    --card-price-mobile: 28px;
+    --button: 14px;
+    --font-secondary: 'Poiret One', cursive;
+    --font-principal: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.text-cian {
+    color: var(--secondary-cream);
+}
+
+.font-w600 {
+    font-weight: 600;
+}
+
+.font-w700 {
+    font-weight: 700;
+}
+
+body {
+    font-family: var(--font-principal);
+    font-size: var(--body-mobile)
+}
+
+h1,
+h2 {
+    font-size: var(--size-title-mobile);
+    font-family: var(--font-principal);
+}
+
+h5 {
+    font-size: var(--size-subtitle-mobile)
+}
+
+.btn-tea {
+    background-color: var(--tea);
+    color: var(--white);
+    font-weight: 800;
+}
+
+.btn-p1 {
+    padding: 3% 6%;
+}
+
+.btn-p2 {
+    font-size: var(--size-subtitle-mobile);
+    padding: 1% 3%;
+    font-weight: 700;
+}
+
+.text-btn {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.boxshaw {
+    text-shadow: 10px 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+
+/* header section */
+
+.header {
+    background-image: url('../assets/images/backgounds/landingMovil2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.header h1 {
+    color: var(--white);
+    font-size: 20px;
+}
+
+.header img.icon-line {
+    display: none;
+}
+
+.header .text-slider {
+    height: 65vh;
+}
+
+.header .icon-arrow {
+    position: absolute;
+    bottom: calc(80vh - 100vh);
+    left: 43%;
+}
+
+
+/* our-products section */
+
+.our-products {
+    background-color: var(--primary-cream);
+    color: var(--white);
+}
+
+.our-products .our-products-wrapper {
+    position: relative;
+}
+
+.our-products .our-products-wrapper .wrapper-title {
+    background-color: var(--secondary-black);
+    border-radius: 0px 75px;
+    color: var(--primary-cream);
+    height: 120px;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.our-products .our-products-wrapper .img-spoon {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+}
+
+.footer {
+    background-image: url("../assets/images/backgounds/footerMovil.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+
+.footer h6 {
+    margin: 2px;
+    font-size: var(--items-nav-footer);
+    color: var(--white);
+}
+
+
+/* Media queries */
+
+@media only screen and (min-width: 768px) {
+    .header .icon-arrow {
+        position: absolute;
+        bottom: calc(110vh - 100vh);
+        left: 50%;
+    }
+    .header h1 {
+        color: var(--white);
+        font-size: 40px;
+    }
+    .header .text-slider {
+        height: 100vh;
+    }
+    body {
+        font-size: var(--body)
+    }
+    h1,
+    h2 {
+        font-size: var(--size-title);
+    }
+    h5 {
+        font-size: var(--size-subtitle)
+    }
+    /* header section */
+    .header {
+        background-image: url('../assets/images/backgounds/landingF2.jpg');
+    }
+    .header img.icon-line {
+        display: block;
+    }
+    .btn-p2 {
+        font-size: var(--size-subtitle);
+    }
+    .text-btn {
+        font-size: 25px;
+    }
+    /* contact us */
+    .contact-us {
+        background-image: url('../assets/images/backgounds/seed.jpg');
+    }
+    .contact-us .contact-layer {
+        height: 100vh;
+        background: linear-gradient(87.93deg, rgba(236, 206, 144, 0) 39.03%, #ECCE90 73.79%);
+    }
+    .contact-us .img-cup-desktop {
+        position: absolute;
+        top: 50%;
+        left: -24px;
+    }
+    .footer {
+        background-image: url("../assets/images/backgounds/footerF.jpg");
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .our-products .our-products-wrapper .img-spoon {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        width: 80%;
+    }
+    .card-product {
+        max-width: 350px;
+    }
+    .card-product .card-img-top {
+        width: 200px;
+    }
+    .contact-us .img-cup-desktop {
+        position: absolute;
+        left: -32px;
+    }
+}
