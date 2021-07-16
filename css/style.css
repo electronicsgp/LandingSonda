@@ -65,6 +65,12 @@ h5 {
     font-weight: 800;
 }
 
+.btn-tear {
+    background-color: var(--white);
+    color: var(--tea);
+    font-weight: 800;
+}
+
 .btn-p1 {
     padding: 3% 6%;
 }
@@ -87,13 +93,15 @@ h5 {
 
 /* header section */
 
-.header {
-    background-image: url('../assets/images/backgounds/landingMovil2.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.carousel-item {
     height: 100vh;
-    background-attachment: fixed;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url("../assets/images/backgounds/landingMovil2.jpg");
 }
 
 .header h1 {
@@ -159,6 +167,9 @@ h5 {
 /* Media queries */
 
 @media only screen and (min-width: 768px) {
+    .carousel-item {
+        background-image: url("../assets/images/backgounds/HeaderL1.jpg");
+    }
     .header .icon-arrow {
         position: absolute;
         bottom: calc(110vh - 100vh);
@@ -182,9 +193,6 @@ h5 {
         font-size: var(--size-subtitle)
     }
     /* header section */
-    .header {
-        background-image: url('../assets/images/backgounds/landingF2.jpg');
-    }
     .header img.icon-line {
         display: block;
     }
@@ -213,6 +221,9 @@ h5 {
 }
 
 @media only screen and (min-width: 1024px) {
+    .carousel-item {
+        background-image: url("../assets/images/backgounds/HeaderL1.jpg");
+    }
     .our-products .our-products-wrapper .img-spoon {
         position: absolute;
         top: 35%;
@@ -228,5 +239,11 @@ h5 {
     .contact-us .img-cup-desktop {
         position: absolute;
         left: -32px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .carousel-item {
+        background-image: url("../assets/images/backgounds/HeaderL2.jpg");
     }
 }
